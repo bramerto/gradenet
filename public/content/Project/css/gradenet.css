@@ -1,0 +1,370 @@
+/* GENERAL STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.has-error {
+    color: #EC1D2C;
+}
+
+.accent, .btn, a { /* Gives accent to all links and buttons */
+    color: #EC1D2C;
+}
+
+.float-right {
+    float: right;
+}
+
+.tooltip {
+    width: 130px;
+}
+
+.div-spacer {
+    margin-top: 20px;
+}
+
+.goback a {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    text-decoration: none;
+    padding: 12px;
+}
+
+.goback a:hover {
+    text-decoration: none;
+    color: #EC1D2C;
+}
+
+img {
+    vertical-align: top !important;
+}
+
+#done-mark {
+    padding-left: 10% !important;
+}
+
+
+/*TABLE STYLES */
+
+.table-header {
+    padding-top: 50px;
+}
+
+#table-teacher-overview, #table-teacher-project-overview {
+    margin-left: 20px;
+    padding-right: 20px !important;
+}
+
+#table-teacher-project-overview>tbody>tr>td:first-child, #table-project-overview>tbody>tr>td:first-child {
+    width: 20px;
+}
+
+#table-teacher-project-overview>tbody>tr>td:last-child {
+    padding-right: 40px;
+}
+
+.hiddenRow {
+    padding: 0 !important;
+}
+
+.accordian-body table thead tr {
+    border-bottom: 0;
+}
+
+.accordian-body table {
+    float: right;
+}
+
+.glyphicon-menu-down {
+    cursor: pointer;
+}
+
+.nothing-found {
+    padding-top: 10px;
+}
+
+#table-project-useroverview>tbody>tr>td:nth-last-child(2) {
+    width: 200px !important;
+}
+
+table thead {
+    vertical-align: middle;
+}
+
+tbody tr {
+    border-bottom: solid rgba(128, 128, 128, 0.3) 1px;
+}
+thead tr {
+    border-bottom: solid rgba(128, 128, 128, 0.9) 2px;
+}
+
+table th, table td {
+    padding: 8px;
+}
+
+.spacer {
+    padding: 5px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+/*HOME PAGE */
+
+#home-login {       /* Places button for the homepage login */
+    margin-left: auto;
+    text-align: center;
+    margin-top: 25%;
+}
+
+/* PROJECT PAGE */
+
+.progress {
+    margin: 10px !important;
+}
+
+.project-photo {
+    width: 14% !important;
+    min-width: 190px;
+    height: auto;
+}
+
+/* PROFILE */
+
+.profile-photo {
+    width: 14% !important;
+    min-width: 190px;
+    height: auto;
+}
+
+.profile-info {
+    margin-left: 5px;
+    margin-top: 1%;
+}
+
+/* MODAL */
+#newStudentModal .modal-content {
+    height: 550px !important;
+}
+
+#newStudentModal .modal-body {
+    height: 400px !important;
+}
+
+.modal-content {
+    height: 480px !important;
+}
+.modal-body {
+    height: 300px !important;
+}
+
+#description {
+    max-width: 538px;
+    max-height: 241px;
+}
+
+/* BUTTONS */
+
+#btn-home-login { /* Makes button bigger */
+    padding: 20px 60px;
+}
+
+.button-font {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+#btn-new-modal {
+    float: right;
+    margin-top: 15px;
+    margin-right: 30px;
+}
+
+#work-processes-dropdown, #project-student-dropdown {
+    margin: 25px 0 25px 0;
+}
+
+
+.btn-primary, .btn-secondary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-link {
+    background-image: none !important;
+}
+
+/*CONTROL PANEL*/
+
+.control-panel-block {
+    /*border: 2px solid black;*/
+    text-align: center;
+    /*vertical-align: middle;*/
+    /*margin-left: auto !important;*/
+
+    /*background-color: rgba(153, 153, 153, 0.5);*/
+    padding: 70px 15px 70px 15px !important;
+}
+
+a.block-container {
+
+}
+
+a.block-container:hover {
+
+}
+
+/*!
+ * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    overflow-x: hidden;
+}
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-collapse: collapse;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #EC1D2C;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #fff;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #EC1D2C;
+    background: none;
+}
+
+#logout {
+    margin-top: 60px;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+
+    #competencestar {
+        display: block !important;
+        float: right !important;
+        min-width: 400px !important;
+        min-height: 400px !important;
+
+        width: 500px !important;
+        height: 500px !important;
+    }
+}
+@media(max-width: 1759px)  {
+    #competencestar {
+        margin-top: 20px;
+        float: left !important;
+    }
+}
+
+@media(max-width:1300px) {
+    #competencestar {
+        display: none !important;
+    }
+}
